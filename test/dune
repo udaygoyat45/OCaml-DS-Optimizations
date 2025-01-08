@@ -1,2 +1,8 @@
 (test
  (name test_ocaml_ds))
+
+(test
+ (name test_pq)
+ (libraries core_bench core)
+ (modules test_pq)
+ (preprocess (pps ppx_jane)))
